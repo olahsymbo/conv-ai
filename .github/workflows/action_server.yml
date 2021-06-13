@@ -1,3 +1,5 @@
+name: action-server
+
 on:
   push:
     branches:

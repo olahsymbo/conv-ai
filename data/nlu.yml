@@ -90,3 +90,19 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: bot_info
+  examples: |
+    - How you could help me?
+    - What you can do?
+    - What help you provide?
+    - How you can be helpful?
+    - What support is offered
+
+- intent: customer_details
+  examples: |
+    - how much is in my account
+    - what is my balance
+    - please tell me what's in the account
+    - account details
+    - transaction history

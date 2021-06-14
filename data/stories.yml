@@ -28,3 +28,13 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: customer bank details
+  steps:
+  - intent: customer_details
+  - action: action_customer_details
+
+- story: customer asks bot info
+  steps:
+  - intent: bot_info
+  - action: utter_bot_info

@@ -105,63 +105,63 @@ nlu:
     - please tell me about my account
     - account details
 
-- intent: buy_product
+- intent: buy_PRODUCT
   examples: |
-    - i want to buy [large](criteria) [laptop](product)
-    - can i get [laptop](product) from the store
-    - im looking for a [small](criteria) [laptop](product) that costs [$100](price)
-    - im interesting in getting a new [$100](price) [laptop](product)
-    - can you direct me to online store to buy [$100](price) [laptop](product)
-    - i need a [medium](criteria) size [laptop](product)
-    - buy [laptop](product) around here
-    - purshase [laptop](product)
-    - get a [laptop](product)
-    - want to purchase a [laptop](product)
-    - pls get me a [laptop](product)
-    - get me a [laptop](product) please
-    - get me [laptop](product) pls
-    - shop for [large](criteria) [laptop](product)
-    - get me [cloth](product) from the store
-    - im looking for a [small](criteria) [cloth](product) that costs [$100](price)
-    - im interesting in getting a new [$100](price) [cloth](product)
-    - can you direct me to online store to buy [$100](price) [cloth](product)
-    - i need a [medium](criteria) size [cloth](product)
-    - buy [cloth](product)
-    - where i can purshase [cloth](product)
-    - where can i get a [cloth](product)
-    - we want to purchase a [cloth](product)
-    - pls get me a [cloth](product)
-    - get us a [cloth](product) please
-    - get me [cloth](product) pls
-    - can i get [food](product) from the store
-    - im looking for a [small](criteria) [food](product) that costs [$100](price)
-    - im interesting in getting a new [$100](price) [food](product)
-    - can you direct me to online store to buy [$100](price) [food](product)
-    - i need a [medium](criteria) size [food](product)
-    - buy [food](product)
-    - purshase [food](product)
-    - get some [food](product) for me around
-    - wanna purchase a [food](product)
-    - pls get me a [food](product)
-    - get me a [food](product) please
-    - get me [food](product) pls
-    - i want to order [food](product)
-    - want to order [cloth](product)
-    - want to order [laptop](product)
-    - [large](criteria) size [cloth](product) is all i want
-    - can i get [food](product) from the store
-    - im looking for a [small](criteria) [food](product) that costs [$100](price)
-    - im interesting in getting a new [$100](price) [food](product)
-    - can you direct me to online store to buy [$100](price) [food](product)
-    - i need a [medium](criteria) size [food](product)
-    - buy [food](product)
-    - purshase [food](product)
-    - get some [food](product) for me around
-    - wanna purchase a [food](product)
-    - pls get me a [food](product)
-    - get me a [food](product) please
-    - get me [food](product) pls
-    - get me [food](product) in [small](criteria) plate
+    - i want to buy [large](criteria) [laptop](PRODUCT)
+    - can i get [laptop](PRODUCT) from the store
+    - im looking for a [small](criteria) [laptop](PRODUCT) that costs [$100](price)
+    - im interesting in getting a new [$100](price) [laptop](PRODUCT)
+    - can you direct me to online store to buy [$100](price) [laptop](PRODUCT)
+    - i need a [medium](criteria) size [laptop](PRODUCT)
+    - buy [laptop](PRODUCT) around here
+    - purshase [laptop](PRODUCT)
+    - get a [laptop](PRODUCT)
+    - want to purchase a [laptop](PRODUCT)
+    - pls get me a [laptop](PRODUCT)
+    - get me a [laptop](PRODUCT) please
+    - get me [laptop](PRODUCT) pls
+    - shop for [large](criteria) [laptop](PRODUCT)
+    - get me [cloth](PRODUCT) from the store
+    - im looking for a [small](criteria) [cloth](PRODUCT) that costs [$100](price)
+    - im interesting in getting a new [$100](price) [cloth](PRODUCT)
+    - can you direct me to online store to buy [$100](price) [cloth](PRODUCT)
+    - i need a [medium](criteria) size [cloth](PRODUCT)
+    - buy [cloth](PRODUCT)
+    - where i can purshase [cloth](PRODUCT)
+    - where can i get a [cloth](PRODUCT)
+    - we want to purchase a [cloth](PRODUCT)
+    - pls get me a [cloth](PRODUCT)
+    - get us a [cloth](PRODUCT) please
+    - get me [cloth](PRODUCT) pls
+    - can i get [food](PRODUCT) from the store
+    - im looking for a [small](criteria) [food](PRODUCT) that costs [$100](price)
+    - im interesting in getting a new [$100](price) [food](PRODUCT)
+    - can you direct me to online store to buy [$100](price) [food](PRODUCT)
+    - i need a [medium](criteria) size [food](PRODUCT)
+    - buy [food](PRODUCT)
+    - purshase [food](PRODUCT)
+    - get some [food](PRODUCT) for me around
+    - wanna purchase a [food](PRODUCT)
+    - pls get me a [food](PRODUCT)
+    - get me a [food](PRODUCT) please
+    - get me [food](PRODUCT) pls
+    - i want to order [food](PRODUCT)
+    - want to order [cloth](PRODUCT)
+    - want to order [laptop](PRODUCT)
+    - [large](criteria) size [cloth](PRODUCT) is all i want
+    - can i get [food](PRODUCT) from the store
+    - im looking for a [small](criteria) [food](PRODUCT) that costs [$100](price)
+    - im interesting in getting a new [$100](price) [food](PRODUCT)
+    - can you direct me to online store to buy [$100](price) [food](PRODUCT)
+    - i need a [medium](criteria) size [food](PRODUCT)
+    - buy [food](PRODUCT)
+    - purshase [food](PRODUCT)
+    - get some [food](PRODUCT) for me around
+    - wanna purchase a [food](PRODUCT)
+    - pls get me a [food](PRODUCT)
+    - get me a [food](PRODUCT) please
+    - get me [food](PRODUCT) pls
+    - get me [food](PRODUCT) in [small](criteria) plate
 
 - intent: purchase_history
   examples: |
@@ -181,15 +181,15 @@ nlu:
     - include item in my cart
     - include it in my cart
     - add to my cart
-    - add [laptop](product) into cart
-    - include [food](product) in my cart
-    - add [food](product)
-    - add [cloth](product)
-    - ok, inlcude this [food](product) in cart
-    - pls add [food](product) to cart
-    - please add [cloth](product) too
-    - make [cloth](product) part of purchased items
-    - add [cloth](product) to purchased items
+    - add [laptop](PRODUCT) into cart
+    - include [food](PRODUCT) in my cart
+    - add [food](PRODUCT)
+    - add [cloth](PRODUCT)
+    - ok, inlcude this [food](PRODUCT) in cart
+    - pls add [food](PRODUCT) to cart
+    - please add [cloth](PRODUCT) too
+    - make [cloth](PRODUCT) part of purchased items
+    - add [cloth](PRODUCT) to purchased items
 
 - intent: checkout
   examples: |
@@ -199,14 +199,14 @@ nlu:
     - pay for my items
     - can i make payment
     - where to make payment
-    - how to pay for product
+    - how to pay for PRODUCT
     - how to pay for item
     - pls let me pay for the items
     - pls checkout
     - checkout cart
     - need to pay now
 
-- lookup: product
+- lookup: PRODUCT
   examples: |
     - shoe
     - laptop

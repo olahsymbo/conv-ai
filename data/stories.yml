@@ -6,28 +6,8 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: bot_info
+  - action: utter_bot_info
 
 - story: customer bank details
   steps:
@@ -38,3 +18,25 @@ stories:
   steps:
   - intent: bot_info
   - action: utter_bot_info
+
+- story: customer purchase product
+  steps:
+  - intent: buy_product
+  - action: action_purchase_products
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_next_steps
+  - intent: deny
+  - action: utter_not_helpful
+
+
+- story: add product to cart
+  steps:
+  - intent: add_cart
+  - action: action_add_cart
+  - intent: checkout
+  - action: utter_pay_now
+  - intent: affirm
+  - action: utter_payment_redirect
+  - intent: deny
+  - action: utter_next_steps

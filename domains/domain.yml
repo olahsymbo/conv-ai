@@ -11,27 +11,14 @@ intents:
   - customer_details
   - bot_info
   - buy_product
-  - add_cart
-  - purchase_history
-  - checkout
 
 slots:
   product:
-    type: text
-  criteria:
-    type: text
-  price:
-    type: text
-
-entities:
-- product
-- criteria
-- price
+  - type: text
 
 actions:
   - action_customer_details
   - action_purchase_products
-  - action_add_cart
 
 responses:
   utter_greet:
@@ -44,18 +31,6 @@ responses:
   utter_did_that_help:
   - text: "Did that help you?"
 
-  utter_next_steps:
-  - text: "You can continue shopping or pay now"
-
-  utter_not_helpful:
-  - text: "You can get additional help on https://www.google.com"
-
-  utter_pay_now:
-  - text: "We support only VISA card for now. Do you want to proceed?"
-
-  utter_payment_redirect:
-  - text: "redirecting to bank homepage..."
-
   utter_happy:
   - text: "Great, carry on!"
 
@@ -66,7 +41,7 @@ responses:
   - text: "I am a bot, powered by Rasa."
 
   utter_bot_info:
-  - text: "I can help you find any product you want to buy from an e-commerce store"
+  - text: "I can help you find any product you want from e-commerce stores"
 
 session_config:
   session_expiration_time: 60

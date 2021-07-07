@@ -49,7 +49,6 @@ class ActionPurchaseProducts(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        result = []
         # import ipdb; ipdb.set_trace()
         current_product = tracker.get_slot('product')
         product_price = tracker.get_slot('price')
@@ -75,13 +74,13 @@ class ActionAddCart(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        result = []
         # import ipdb; ipdb.set_trace()
-        id = random.randint(110,9000)
+        id = random.randint(110, 9000)
         current_product = tracker.get_slot('product')
-        cursor.execute("INSERT INTO shop (id, product, brand, amount, url, date) VALUES (%s, %s, %s, %s, %s, %s)",
-                       (id, current_product, "dunder", 10, "www.amazon.com", datetime.now().strftime("%Y-%m-%d")))
-        con.commit()
-        dispatcher.utter_message(text="Your {} has been added to cart".format(current_product))
+        if current_product is not None:
+            cursor.execute("INSERT INTO shop (id, product, brand, amount, url, date) VALUES (%s, %s, %s, %s, %s, %s)",
+                           (id, current_product, "dunder", 10, "www.amazon.com", datetime.now().strftime("%Y-%m-%d")))
+            con.commit()
+            dispatcher.utter_message(text="Your {} has been added to cart".format(current_product))
 
         return []

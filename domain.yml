@@ -16,7 +16,7 @@ intents:
   - checkout
 
 slots:
-  PRODUCT:
+  product:
     type: text
   criteria:
     type: text
@@ -24,7 +24,7 @@ slots:
     type: text
 
 entities:
-- PRODUCT
+- product
 - criteria
 - price
 

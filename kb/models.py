@@ -10,9 +10,11 @@ class Shop(models.Model):
         db_table = 'shop'
 
     id = models.IntegerField(primary_key=True)
-    timestamp = models.DateTimeField()
-    temperature = models.CharField(max_length=250)
-    duration = models.CharField(max_length=250)
+    product = models.CharField(max_length=250)
+    brand = models.CharField(max_length=250)
+    amount = models.CharField(max_length=250)
+    url = models.CharField(max_length=250)
+    date = models.DateTimeField()
 
     def __str__(self):
-        return f"{self.id} {self.timestamp} {self.temperature} {self.duration}"
+        return f"{self.id} {self.product} {self.url} {self.date}"

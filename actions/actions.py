@@ -5,6 +5,7 @@ from datetime import datetime
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
+from rasa_sdk.events import AllSlotsReset
 from rasa_sdk.executor import CollectingDispatcher
 
 import psycopg2
@@ -59,11 +60,12 @@ class ActionPurchaseProducts(Action):
         # print(result)
         if not criteria:
             dispatcher.utter_message(text="here are {}".format(current_product))
+            dispatcher.utter_message(text="www.amazon.com")
         elif not product_price:
             dispatcher.utter_message(text="here are {} of size {}".format(current_product, criteria))
         elif product_price:
             dispatcher.utter_message(text="here are {} {}".format(product_price, current_product))
-        return []
+        return [AllSlotsReset()]
 
 
 class ActionAddCart(Action):

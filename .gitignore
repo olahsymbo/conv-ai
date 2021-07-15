@@ -64,3 +64,4 @@ target/
 !*.secret
 .env
 models
+chatroom

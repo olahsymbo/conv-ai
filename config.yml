@@ -52,7 +52,8 @@ pipeline:
      max_ngram: 4
    - name: DIETClassifier
    - name: CRFEntityExtractor
-     epochs: 100
+     max_iterations: 100
+     BILOU_flag: True
      constrain_similarities: true
    - name: EntitySynonymMapper
    - name: ResponseSelector

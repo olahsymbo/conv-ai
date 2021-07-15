@@ -23,6 +23,8 @@ stories:
   steps:
   - intent: buy_product
   - action: action_purchase_products
+  - slot_was_set:
+      - my_slot: product
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_next_steps
@@ -34,9 +36,19 @@ stories:
   steps:
   - intent: add_cart
   - action: action_add_cart
+
+
+- story: checkout now
+  steps:
   - intent: checkout
   - action: utter_pay_now
   - intent: affirm
-  - action: utter_payment_redirect
+  - action: action_checkout
   - intent: deny
   - action: utter_next_steps
+
+
+- story: check purchase history
+  steps:
+  - intent: purchase_history
+  - action: action_purchase_history

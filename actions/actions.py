@@ -14,7 +14,9 @@ from dotenv import load_dotenv
 warnings.filterwarnings("ignore")
 
 load_dotenv()
+
 # get the postgres db connection parameters from environment variable
+
 name = os.getenv("DATABASE_NAME")
 user = os.getenv("DATABASE_USERNAME")
 password = os.getenv("DATABASE_PASSWORD")

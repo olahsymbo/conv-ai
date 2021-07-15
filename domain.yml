@@ -12,6 +12,7 @@ intents:
   - bot_info
   - buy_product
   - add_cart
+  - remove_cart
   - purchase_history
   - checkout
 
@@ -32,6 +33,9 @@ actions:
   - action_customer_details
   - action_purchase_products
   - action_add_cart
+  - action_remove_cart
+  - action_purchase_history
+  - action_checkout
 
 responses:
   utter_greet:
@@ -42,16 +46,22 @@ responses:
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "did that help you?"
+  - text: "did you find it helpful?"
+  - text: "is the result relevant?"
 
   utter_next_steps:
   - text: "You can continue shopping or pay now"
 
+  utter_welcome:
+  - text: "You're welcome"
+    image: "https://cdn.pixabay.com/photo/2020/12/18/01/27/smile-5840910_1280.png"
+
   utter_not_helpful:
-  - text: "You can get additional help on https://www.google.com"
+  - text: "You can get additional help on https://www.shopify.com"
 
   utter_pay_now:
-  - text: "We support only VISA card for now. Do you want to proceed?"
+  - text: "we support only VISA and Master card for now. Do you want to continue?"
 
   utter_payment_redirect:
   - text: "redirecting to bank homepage..."
@@ -63,7 +73,7 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am bot, powered by Rasa Engine."
 
   utter_bot_info:
   - text: "I can help you find any product you want to buy from an e-commerce store"

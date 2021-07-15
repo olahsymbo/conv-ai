@@ -7,6 +7,11 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
+- rule: Say 'You're welcome  anytime the user challenges
+  steps:
+  - intent: thank_bot
+  - action: utter_welcome
+
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge
